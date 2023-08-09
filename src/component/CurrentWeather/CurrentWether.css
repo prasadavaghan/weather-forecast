@@ -1,0 +1,29 @@
+.current-weather {
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 30%;
+}
+
+.weatherIcon {
+    width: 18%;
+}
+
+@media (max-width: 768px) {
+    .current-weather {
+        font-size: 16px;
+        width: 70%;
+        margin-top: 5px;
+    }
+}
+
+
+/* Media query for screens with maximum width of 480px (typical mobile phones) */
+
+@media (max-width: 480px) {
+    .current-weather {
+        font-size: 14px;
+        width: 70%;
+    }
+}

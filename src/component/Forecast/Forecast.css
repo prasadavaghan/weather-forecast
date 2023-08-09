@@ -1,0 +1,40 @@
+.forecast {
+    display: flex;
+    width: 80%;
+    margin-top: 10px;
+    max-height: 20%;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.forecast-item {
+    margin: 5px;
+    padding: 0.2%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #f8f8f8;
+    width: 12%;
+    height: 20%;
+    flex-shrink: 0;
+    font-size: 0.8rem;
+}
+
+
+/* Media query for screens with maximum width of 768px */
+
+@media (max-width: 768px) {
+    .forecast {
+        flex-direction: column;
+        max-height: none;
+        overflow-x: auto;
+    }
+    .forecast-item {
+        width: 40%;
+        height: auto;
+        margin: 5px 0;
+        font-size: 0.7rem;
+    }
+}
